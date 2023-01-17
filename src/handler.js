@@ -1,7 +1,5 @@
-'use strict';
-
-module.exports.generateRandomNumber = event => {
-  const randomNumber = parseInt(Math.random() * 100);
-  console.log("The random generated integer is: ", randomNumber);
-  return randomNumber;
+exports.handler = async (event) => {
+    console.log(event);
+    return 'Hello from Lambda!';
 };
+
