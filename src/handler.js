@@ -1,5 +1,8 @@
 exports.handler = async (event) => {
-    console.log(event);
-    return 'Hello from Lambda!';
+    // TODO implement
+    const response = {
+        statusCode: 200,
+        body: JSON.stringify('Welcome to TechnoCirrus!!!'),
+    };
+    return response;
 };
-
